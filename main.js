@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: './targets.mind',
+      imageTargetSrc: './targets-6.mind',
     });
     const { renderer, scene, camera } = mindarThree;
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const smile = await loadGLTF('./assets/2smile.gltf');
     smile.scene.scale.set(10, 10, 10);
-    smile.scene.position.set(0, 10, -1);
+    smile.scene.position.set(0, -1.2, -1);
 
     const fb = await loadGLTF('./assets/3fb.gltf');
     fb.scene.scale.set(8, 8, 8);
