@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const wa = await loadGLTF('./assets/4wa.gltf');
     wa.scene.scale.set(8, 8, 8);
     wa.scene.position.set(0, 0, 0);
-    fb.scene.rotation.set( Math.PI / 2,Math.PI / 2, 0);
 
     const ig = await loadGLTF('./assets/5ig.gltf');
     ig.scene.scale.set(8, 8, 8);
