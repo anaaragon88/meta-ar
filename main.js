@@ -54,11 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
     pride.scene.position.set(0, -0.6, 0);
 
     const metaiso = await loadGLTF('./assets/7meta.gltf');
-    metaiso.scene.scale.set(8, 8, 8);
+    metaiso.scene.scale.set(7, 7, 7);
     metaiso.scene.position.set(0, -0.6, 0);
 
     const metalogo = await loadGLTF('./assets/8metalogo.gltf');
-    metalogo.scene.scale.set(4, 4, 4);
+    metalogo.scene.scale.set(3, 3, 3);
     metalogo.scene.position.set(0, -0.6, 0);
 
     const robot = await loadGLTF('./assets/9robot.glb');
@@ -128,6 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const delta = clock.getDelta();
       oculus.scene.rotation.set(0, oculus.scene.rotation.y + delta, 0);
       pride.scene.rotation.set(0, pride.scene.rotation.y + delta, 0);
+      metaiso.scene.rotation.set(0, metaiso.scene.rotation.y + delta, 0);
+
       metalogo.scene.rotation.set(0, metalogo.scene.rotation.y + delta, 0);
 
 
