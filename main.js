@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const fb = await loadGLTF('./assets/3fb.gltf');
     fb.scene.scale.set(8, 8, 8);
     fb.scene.position.set(0, 0, 0);
-    fb.scene.rotation.set( 0,Math.PI / -2, 0); // Ajusta el ángulo de rotación según sea necesario
-
 
     const wa = await loadGLTF('./assets/4wa.gltf');
     wa.scene.scale.set(8, 8, 8);
